@@ -1,0 +1,367 @@
+/* styles.css */
+@font-face {
+  font-family: "Roboto Black";
+  src: url("./fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Squada One";
+  src: url("./fonts/SquadaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("./fonts/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 4%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 25px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #e50914;
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-btn,
+.notif-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-btn svg,
+.notif-btn svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s;
+}
+
+.search-btn:hover svg,
+.notif-btn:hover svg {
+  fill: #e50914;
+  transform: scale(1.1);
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Hero Banner */
+.hero-banner {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: url("stranger_things.jpg") no-repeat center center/cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 60%
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 20%);
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.netflix-series {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.netflix-icon {
+  color: #e50914;
+  font-family: "Roboto Black", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.title {
+  font-family: "Squada One", cursive, sans-serif;
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.basic-info {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-family: "Roboto Black", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.extra-info {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.extra-info strong {
+  opacity: 0.7;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.btn-watch,
+.btn-mylist {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-family: "Roboto Black", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-watch {
+  background-color: #e50914;
+  color: white;
+  border: none;
+}
+
+.btn-watch:hover {
+  background-color: #f40612;
+}
+
+.btn-mylist {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+  border: none;
+}
+
+.btn-mylist:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
+.btn-watch svg,
+.btn-mylist svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/* Carrossel */
+.carousel-section {
+  position: relative;
+  margin: 2rem 4%;
+}
+
+.carousel-title {
+  font-family: "Roboto Black", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.carousel-slide::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 150px;
+  height: 225px;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.item-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.carousel-item:hover .item-hover {
+  display: flex;
+}
+
+.btn-play-small {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.item-meta {
+  font-size: 0.8rem;
+  color: #46d369;
+  margin-top: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 10px;
+  }
+
+  .nav-menu ul {
+    display: none;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .hero-banner {
+    min-height: 500px;
+  }
+
+  .banner-content {
+    bottom: 5%;
+    left: 20px;
+    right: 20px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .carousel-item {
+    width: 120px;
+    height: 180px;
+  }
+}
