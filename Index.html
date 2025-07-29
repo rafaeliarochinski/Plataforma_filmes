@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER FIXO -->
+    <header class="header">
+      <div class="header-content">
+        <img src="netflix_logo.png" alt="Netflix Logo" class="logo" />
+
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Bombando</a></li>
+            <li><a href="#">Minha Lista</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="search-btn" aria-label="Pesquisar">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C8.01 14 6 11.99 6 9.5S8.01 5 10.5 5 15 7.01 15 9.5 12.99 14 10.5 14z"
+              />
+            </svg>
+          </button>
+
+          <button class="notif-btn" aria-label="Notificações">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9v5l-1 1v1h16v-1l-1-1V9c0-3.87-3.13-7-7-7zm0 18c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2z"
+              />
+            </svg>
+          </button>
+
+          <img src="cachorro_perfil.webp" alt="Perfil" class="profile-icon" />
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+      <section class="hero-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <div class="netflix-series">
+            <span class="netflix-icon">N</span>
+            <span>Série</span>
+          </div>
+
+          <h1 class="title">STRANGER THINGS</h1>
+
+          <div class="basic-info">
+            2016 | A16 | 4 Temporadas | Ficção Científica
+          </div>
+
+          <p class="description">
+            Quando um garoto desaparece, a cidade toda participa nas buscas. Mas
+            o que encontram são segredos, forças sobrenaturais e uma menina.
+          </p>
+
+          <p class="extra-info">
+            <strong>Estreando:</strong> Winona Rider, David Harbour, Millie
+            Bobby Brown
+          </p>
+          <p class="extra-info">
+            <strong>Criação:</strong> The Duffer Brothers
+          </p>
+
+          <div class="action-buttons">
+            <button class="btn-watch" aria-label="Assistir Stranger Things">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              Assistir
+            </button>
+            <button class="btn-mylist" aria-label="Adicionar à Minha Lista">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+              </svg>
+              Minha Lista
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- CARROSSEL 1 - SÉRIES -->
+      <section class="carousel-section">
+        <h2 class="carousel-title">Séries populares</h2>
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <div class="carousel-item">
+              <img src="Dexter.jpg" alt="Dexter" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Dexter</h3>
+                <div class="item-meta">96% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Breaking_Bad.jpg" alt="Breaking Bad" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Breaking Bad</h3>
+                <div class="item-meta">99% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Magos.jpg" alt="Magos" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Magos</h3>
+                <div class="item-meta">92% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Os_3_La_Em_Baixo.jpg" alt="Os 3 Lá Embaixo" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Os 3 Lá Embaixo</h3>
+                <div class="item-meta">88% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Caçadores_De_Trolls.jpg" alt="Caçadores de Trolls" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Caçadores de Trolls</h3>
+                <div class="item-meta">85% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="The_Walking_Dead.jpg" alt="The Walking Dead" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>The Walking Dead</h3>
+                <div class="item-meta">94% relevante</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARROSSEL 2 - FILMES -->
+      <section class="carousel-section">
+        <h2 class="carousel-title">Filmes em destaque</h2>
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <div class="carousel-item">
+              <img src="Ate_O_Ultimo_Homem.jpg" alt="Até o Último Homem" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Até o Último Homem</h3>
+                <div class="item-meta">97% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="1917.jpg" alt="1917" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>1917</h3>
+                <div class="item-meta">95% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Bastardos_Inglorios.jpg" alt="Bastardos Inglórios" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Bastardos Inglórios</h3>
+                <div class="item-meta">98% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="Nada_De_Novo_No_Front.jpg"
+                alt="Nada de Novo no Front"
+              />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Nada de Novo no Front</h3>
+                <div class="item-meta">96% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="El_Camino.jpg" alt="El Camino" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>El Camino</h3>
+                <div class="item-meta">93% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Resgate.jpg" alt="Resgate" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Resgate</h3>
+                <div class="item-meta">91% relevante</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Resgate_2.jpg" alt="Resgate 2" />
+              <div class="item-hover">
+                <button class="btn-play-small">▶</button>
+                <h3>Resgate 2</h3>
+                <div class="item-meta">90% relevante</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
